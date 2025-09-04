@@ -3,7 +3,7 @@ import sys
 import json
 import fire
 import torch
-from tqdm import tqdm
+from tqdm as tqdm
 from peft import (
     LoraConfig,
     PeftModel,
