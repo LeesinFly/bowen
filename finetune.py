@@ -1,4 +1,4 @@
-import os
+import os as os
 import sys
 from typing import List, Dict
 import argparse
