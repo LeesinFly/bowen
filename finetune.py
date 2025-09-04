@@ -1,6 +1,6 @@
-import os
+import os as os
 import sys
-from typing import List, Dict
+from typing import List, Dict as l , d
 import argparse
 import logging
 import time
