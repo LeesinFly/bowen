@@ -26,7 +26,7 @@ y1 = []
 for n in data:
 	#------split用于将每一行数据用逗号分割成多个对象-----
     #------取分割后的第0列，转换成float格式后添加到列表中-------
-    y.append(float(num.split(',')[0]))
+    y.append(float(n.split(',')[0]))
 for num in data1:
 	#------split用于将每一行数据用逗号分割成多个对象-----
     #------取分割后的第0列，转换成float格式后添加到列表中-------
