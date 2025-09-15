@@ -19,7 +19,7 @@ from datasets import Dataset
 import transformers
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from utils.prompter import Prompter
-from utils as MODEL_DICT
+from utils import MODEL_DICT
 
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
