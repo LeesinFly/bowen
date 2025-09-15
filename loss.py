@@ -23,10 +23,10 @@ x = np.arange(0,150)
 y = []
 y1 = []
 #---------- 用循环的方式添加进列表  -----------
-for n in data:
+for num in data:
 	#------split用于将每一行数据用逗号分割成多个对象-----
     #------取分割后的第0列，转换成float格式后添加到列表中-------
-    y.append(float(n.split(',')[0]))
+    y.append(float(num.split(',')[0]))
 for n in data1:
 	#------split用于将每一行数据用逗号分割成多个对象-----
     #------取分割后的第0列，转换成float格式后添加到列表中-------
@@ -44,6 +44,7 @@ plt.ylabel('Loss')
 plt.title('改进Yolov7-loss')
 plt.legend()
 plt.show()
+
 
 
 
