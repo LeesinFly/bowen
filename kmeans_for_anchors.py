@@ -18,8 +18,7 @@ def cas_ratio(box,cluster):
 
     return np.max(ratios, -1)
 
-def avg_ratio(box,cluster):
-    return np.mean([np.min(cas_ratio(box[i],cluster)) for i in range(box.shape[0])])
+
 
 def kmeans(box,k):
     #-------------------------------------------------------------#
