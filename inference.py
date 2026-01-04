@@ -1,3 +1,25 @@
+###测试代码
+# 模型别名 -> huggingface hub 本地路径均可
+model_map:
+  llama: ["llama", "llama-7b", "huggyllama/llama-7b"]
+  falcon: ["falcon", "tiiuae/falcon-7b"]
+  qwen: ["qwen", "Qwen/Qwen-7B-Chat"]
+
+# 生成超参
+generation:
+  temperature: 0.2
+  top_p: 0.75
+  top_k: 40
+  num_beams: 4
+  repetition_penalty: 1.3
+  max_new_tokens: 256
+  truncate_len: 1024       # 输入超长截断，而非直接 return ""
+
+# 系统
+torch_compile: true        # torch>=2.0 时自动编译
+wandb: false
+###
+
 import os
 import sys
 import json
