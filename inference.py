@@ -1,3 +1,18 @@
+###测试代码
+# 模型别名 -> huggingface hub 本地路径均可
+model_map:
+  llama: ["llama", "llama-7b", "huggyllama/llama-7b"]
+  falcon: ["falcon", "tiiuae/falcon-7b"]
+  qwen: ["qwen", "Qwen/Qwen-7B-Chat"]
+
+
+
+
+# 系统
+torch_compile: true        # torch>=2.0 时自动编译
+wandb: false
+###
+
 import os
 import sys
 import json
