@@ -34,7 +34,7 @@ def get_model_name(model_name):
         for v in values:
             if v in model_name:
                 return key
-    return ""
+   
 
 
 def main(
