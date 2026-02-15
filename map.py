@@ -43,6 +43,7 @@ plt.xlabel('Epoch')
 #---------   y轴的小标题   -------------
 plt.ylabel('map')
 #---------   整个图的标题  ----------
-plt.title('Improved YOLOv7-map')
+plt.title('Improved YOLOv12-map')
 plt.legend()
 plt.show()
+
