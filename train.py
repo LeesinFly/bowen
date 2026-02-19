@@ -543,7 +543,7 @@ if __name__ == "__main__":
                 gen_val         = DataLoader(val_dataset  , shuffle = shuffle, batch_size = batch_size, num_workers = num_workers, pin_memory=True, 
                                             drop_last=True, collate_fn=yolo_dataset_collate, sampler=val_sampler)
 
-                UnFreeze_flag   = True
+                UnFreeze_flag   = False
 
             gen.dataset.epoch_now       = epoch
             gen_val.dataset.epoch_now   = epoch
